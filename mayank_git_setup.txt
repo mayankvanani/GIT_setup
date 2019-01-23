@@ -1,0 +1,70 @@
+-------------------------SETUP------------------------------------------
+1) $sudo apt-get install git
+
+2) $git config --global color.ui auto
+
+3) 	Save this file in your home directory with the name 'git-completion.bash'.
+	Save this file in your home directory with the name 'git-prompt.sh'.
+	Copy the content of 'bashrc_profile' to '.bashrc' file.
+
+4) $git config --global core.editor "subl -n -w"
+   $git config --global push.default upstream
+   $git config --global merge.conflictstyle diff3
+
+5) $git config --global user.email "[user email address]"
+   $git config --global user.name "[user name]"
+
+
+
+
+
+----------------------COMMANDS-----------------------------------------
+1)	diff -u [oldfile] [newfile]
+
+2)*	git diff [commit_id_1] [commit_id_2]
+
+3)	git log --stat
+
+4)* 	git clone [HTTPS_URL]
+
+5)*	git log
+
+6)*	git checkout [commit_id]
+
+7)*	git init							// ran from the repository which we want to make git repository
+
+8)	git status							// used to check the status of git repository
+
+9)	git add [filename]						// used to add file to staging area
+
+10)	git reset [filename]						// used to remove a file from staging area which may have been added to staging area accidently
+
+11)	git commit							// would open up the text editor(whichever that has been set) to enter the COMMIT MESSAGE
+		OR
+	$git commit -m "commit message"					// lets you set the commit message from the command line
+
+12)	$git diff							// compares files in working directory and staging area
+	$git diff --staged						// compares fiels in staging area and repository's most recent commit
+
+13)	$git branch							// displays the brnches of current repository fr the current commit
+	$git branch [user_defined_branch_name]				// creates a new branch of the last checked out repository
+
+14) 	$git log --graph --oneline [repo_1] [repo_2] [repo_3] ...	// used to see the graph(not GUI) of particular repository
+
+15)	$git merge [branchname1] [branchname2]				// merge branches
+
+16)	$git show [commit_id]						// shows the git diff between the commit_id and its parent
+
+17)	$git branch -d [branchname]					// deletes the branch label. it does not delete the commits but deletes the label
+
+18)	$git remote							// lets you to view and create remotes
+
+19)	$git remote add [name_of_remote] [HTTPS_URL]			// create a remote for repository on github
+
+20)	$git remote -v							// verbose i.e. more detailed commands would be displayed.
+
+21)	$git pull [name_of_remote] [branch_name]			// pull the repository from github to branch
+
+22)	$git fetch [remote]						// updates the local copy to the gitversion
+
+
